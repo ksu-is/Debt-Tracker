@@ -6,15 +6,15 @@ from tkinter import messagebox
 root = Tk()
 
 # Change the color scheme of the background
-grey = "#282828"
-root.config(background=grey)
+purple = "#CCCCFF"
+root.config(background=purple)
 
 # Create the labels
 font = ("Comic Sans SF", 8)
-l1 = Label(root, text="Loan Amount", fg="white", font=font, background=grey, anchor="center")
-l2 = Label(root, text="Years of Payments", fg="white", font=font, background=grey, anchor="center")
-l3 = Label(root, text="Interest Rate (%)", fg="white", font=font, background=grey, anchor="center")
-l4 = Label(root, text="Monthly Payment", fg="white", font=font, background=grey, anchor="center")
+l1 = Label(root, text="Loan Amount", fg="black", font=font, background=purple, anchor="center")
+l2 = Label(root, text="Years of Payments", fg="black", font=font, background=purple, anchor="center")
+l3 = Label(root, text="Interest Rate (%)", fg="black", font=font, background=purple, anchor="center")
+l4 = Label(root, text="Monthly Payment", fg="black", font=font, background=purple, anchor="center")
 
 # Place the labels in a Grid
 l1.grid(row=0, padx=(10, 0))
@@ -23,9 +23,9 @@ l3.grid(row=2, padx=(10, 0))
 l4.grid(row=3, padx=(10, 0))
 
 # Create Variables for Initial Entries and Calculation Entry
-e1 = Entry(root, justify="center", cursor="pencil")
-e2 = Entry(root, justify="center", cursor="pencil")
-e3 = Entry(root, justify="center", cursor="pencil")
+e1 = Entry(root, justify="center", cursor="umbrella")
+e2 = Entry(root, justify="center", cursor="umbrella")
+e3 = Entry(root, justify="center", cursor="umbrella")
 monthly_payment = Entry(root, justify="center", disabledbackground="gray80", cursor="no", state=DISABLED)
 
 # Place the Entries in a Grid
