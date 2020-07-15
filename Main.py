@@ -38,10 +38,10 @@ monthly_payment.grid(row=3, column=1, columnspan=2, padx=(10, 10), pady=10, ipad
 def custom_entry():
 
     # Create Custom Labels
-    l5 = Label(root, text="Custom Amount", fg="white", font=font, background=grey)
-    l6 = Label(root, text="Custom Duration", fg="white", font=font, background=grey)
-    l7 = Label(root, text="Monthly Payment For Remaining Years", fg="white", font=font, background=grey)
-    l8 = Label(root, text="Total Years To Complete Loans", fg="white", font=font, background=grey)
+    l5 = Label(root, text="Custom Amount", fg="black", font=font, background=grey)
+    l6 = Label(root, text="Custom Duration", fg="black", font=font, background=grey)
+    l7 = Label(root, text="Monthly Payment For Remaining Years", fg="black", font=font, background=grey)
+    l8 = Label(root, text="Total Years To Complete Loans", fg="black", font=font, background=grey)
 
     # Set Positions of Custom Labels
     l5.grid(row=4, pady=20, padx=(10, 0))
