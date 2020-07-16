@@ -51,9 +51,9 @@ def custom_entry():
 
     # Create Variables for Custom Entries and Custom Calculation Entry
     global e4  # Global so other functions can access it
-    e4 = Entry(root, justify="center", cursor="pencil")
+    e4 = Entry(root, justify="center", cursor="umbrella")
     global e5
-    e5 = Entry(root, justify="center", cursor="pencil")
+    e5 = Entry(root, justify="center", cursor="umbrella")
     global custom_payment
     custom_payment = Entry(root, disabledbackground="gray80", cursor="no", state=DISABLED)
     global remaining_years
@@ -92,8 +92,8 @@ def calc(arg):
     except ValueError:
         messagebox.showerror("Invalid Entry", "Input Proper Value For The Interest Rate")
         return
-    if user_interest > 100:
-        messagebox.showerror("Invalid Entry", "Interest Rate Cannot Be Over 100")
+    if user_interest > 40:
+        messagebox.showerror("Invalid Entry", "Interest Rate Cannot Be Over 40")
         return
 
     # Calculate Loan
