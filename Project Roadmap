@@ -17,13 +17,15 @@ TASKS:
 [*] Upload files from repository of user: 
 [*] Test code is working properly
 [*] Test GUI interface looks good
+[*] Create a CLEAR button on calculator- I was able to setup "clear button as shown on calculator, but I cannot get the button to work
 
 
 Sprint 3:
 
-[] Continue coding, refining, and testing and add new tasks since sprint 2 below
-[] Create ONE PowerPoint slide introducing my project and upload it with the following information:
+[*] Continue coding, refining, and testing and add new tasks since sprint 2 below
+[* FORGOT TO LOAD IN D2L] Create ONE PowerPoint slide introducing my project and upload it with the following information:
 	Team Memeber(s)
 	Title of project
 	Tag Line that introduce main concept of what it does
 	Show 1-2 screenshots/pictures of idea
+[* NOT SUCCESSFUL] Continue to work on the "clear" button to get working
