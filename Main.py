@@ -144,6 +144,14 @@ def custom_calc(arg1, arg2):
     arg2.insert(0, str(custom_loan_payment[0]))
     arg2.config(state=DISABLED)
 
+def clear(self):
+    """
+    Allows user to clear the full entry.
+    :return: None
+    """
+    self.entry.configure(state="normal")
+    self.entry.delete(0, END)
+    self.entry.configure(state="disabled")    
 
 # Create Menu
 menu = Menu(root)
@@ -158,6 +166,8 @@ b1.grid(row=8, column=1, pady=10)
 b2 = Button(root, text="Custom", command=lambda: custom_calc(custom_payment, remaining_years))
 b2.config(state=DISABLED)
 b2.grid(row=8, column=2, pady=10)
+b3 = Button(root, text= "Clear", command=lambda: self.clear())
+b3.grid(row=8, column=3, pady=10)
 
 # Set so Program doesn't Terminate Until the Program is Exited
 mainloop()
