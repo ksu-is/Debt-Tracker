@@ -87,17 +87,6 @@ class CustomLoan(Loan):  # Custom Loan
 
 			# Return Result
 			return result1
-	def clear(self):
-        """
-        Allows user to backspace their entry.
-        :return: None
-        """
-        self.entry.configure(state="normal")
-        if self.entry.get() != "Invalid Input":
-            # Clears full entry when "Invalid Input"
-            text = self.entry.get()[:-1]
-            self.entry.delete(0,END)
-            self.entry.insert(0,text)
-        else:
-            self.entry.delete(0, END)
-        self.entry.configure(state="disabled")
+	
+	## def clear(self): I cleared this code in order to get the program to work propely
+       
